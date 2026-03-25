@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { allSpecies, rarityColors, type BeeSpecies } from "@/lib/data/species";
 
@@ -52,9 +53,20 @@ function TradingCard({ species, flipped, onFlip }: { species: BeeSpecies; flippe
             </span>
           </div>
 
-          {/* Bee Emoji Area */}
+          {/* Bee Image Area */}
           <div className={`${colors.bg} h-36 flex items-center justify-center relative`}>
-            <span className="text-6xl drop-shadow-md">{(species as any).emoji || "🐝"}</span>
+            <Image
+              src={`/images/species/${species.id}-trading-card.png`}
+              alt={species.name}
+              width={120}
+              height={120}
+              className="object-contain drop-shadow-md"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+                e.currentTarget.nextElementSibling?.classList.remove("hidden");
+              }}
+            />
+            <span className="text-6xl drop-shadow-md hidden">{(species as any).emoji || "🐝"}</span>
             {/* Pack indicator */}
             <div className="absolute bottom-1 right-2 text-[9px] font-bold text-gray-400">
               Pack {species.pack}

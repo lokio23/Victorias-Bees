@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { allSpecies, rarityColors, type BeeSpecies } from "@/lib/data/species";
 
@@ -84,9 +85,20 @@ function SpeciesCard({ species, onClick }: { species: BeeSpecies; onClick: () =>
       <div className={`${colors.badge} text-white text-xs font-bold px-3 py-1 text-center uppercase tracking-wider`}>
         {species.rarity}
       </div>
-      {/* Species Emoji */}
+      {/* Species Image */}
       <div className="h-32 bg-gradient-to-b from-white/50 to-transparent flex items-center justify-center">
-        <span className="text-6xl drop-shadow-md">{(species as any).emoji || "🐝"}</span>
+        <Image
+          src={`/images/species/${species.id}-trading-card.png`}
+          alt={species.name}
+          width={100}
+          height={100}
+          className="object-contain drop-shadow-md"
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+            e.currentTarget.nextElementSibling?.classList.remove("hidden");
+          }}
+        />
+        <span className="text-6xl drop-shadow-md hidden">{(species as any).emoji || "🐝"}</span>
       </div>
       {/* Info */}
       <div className="p-4">
@@ -136,7 +148,18 @@ function SpeciesDetail({ species, onClose }: { species: BeeSpecies; onClose: () 
             </button>
           </div>
           <div className="text-center mt-4">
-            <span className="text-7xl drop-shadow-lg mb-3 inline-block">{(species as any).emoji || "🐝"}</span>
+            <Image
+              src={`/images/species/${species.id}-trading-card.png`}
+              alt={species.name}
+              width={140}
+              height={140}
+              className="object-contain drop-shadow-lg mb-3 inline-block"
+              onError={(e) => {
+                e.currentTarget.style.display = "none";
+                e.currentTarget.nextElementSibling?.classList.remove("hidden");
+              }}
+            />
+            <span className="text-7xl drop-shadow-lg mb-3 inline-block hidden">{(species as any).emoji || "🐝"}</span>
             <h2 className="font-display text-3xl font-bold">{species.name}</h2>
             <p className="italic text-white/80">{species.scientificName}</p>
           </div>

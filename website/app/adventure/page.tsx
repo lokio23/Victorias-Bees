@@ -1,7 +1,29 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+
+// Map story node IDs to adventure scene image filenames
+const nodeImages: Record<string, string> = {
+  arrive: "apiary-arrival",
+  suit_up: "suit-up",
+  smoker: "smoker",
+  approach_hive_pine: "pine-needles",
+  approach_hive_burlap: "burlap",
+  open_hive_side: "hive-box",
+  open_hive_front: "blocked-entrance",
+  inspect_frame_smoke: "inspect-frame",
+  inspect_frame_calm: "calm-approach",
+  discovery_eggs: "eggs-discovery",
+  discovery_queen: "queen-spotted",
+  surprise_eggs: "bee-landing",
+  surprise_queen: "bee-landing",
+  ending_still_eggs: "ending-calm",
+  ending_step_eggs: "ending-observer",
+  ending_still_queen: "ending-apiarist",
+  ending_step_queen: "ending-smoker",
+};
 
 interface StoryNode {
   id: string;
@@ -255,7 +277,22 @@ export default function AdventurePage() {
             >
               {/* Story Text */}
               <div className="p-8">
-                <div className="text-center text-5xl mb-4">{node.emoji}</div>
+                <div className="text-center mb-4">
+                  {nodeImages[currentNode] ? (
+                    <Image
+                      src={`/images/adventure/${nodeImages[currentNode]}.png`}
+                      alt=""
+                      width={200}
+                      height={200}
+                      className="mx-auto rounded-xl object-contain drop-shadow-md"
+                      onError={(e) => {
+                        e.currentTarget.style.display = "none";
+                        e.currentTarget.nextElementSibling?.classList.remove("hidden");
+                      }}
+                    />
+                  ) : null}
+                  <span className={`text-5xl ${nodeImages[currentNode] ? "hidden" : ""}`}>{node.emoji}</span>
+                </div>
                 <p className="text-gray-800 text-lg leading-relaxed">
                   {node.text}
                 </p>
