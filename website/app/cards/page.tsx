@@ -2,9 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { allSpecies, rarityColors, type BeeSpecies } from "@/lib/data/species";
-import { basePath } from "@/lib/basePath";
 
 function StatBar({ label, value, maxValue = 10 }: { label: string; value: number; maxValue?: number }) {
   return (
@@ -54,15 +52,9 @@ function TradingCard({ species, flipped, onFlip }: { species: BeeSpecies; flippe
             </span>
           </div>
 
-          {/* Bee Image Area */}
+          {/* Bee Emoji Area */}
           <div className={`${colors.bg} h-36 flex items-center justify-center relative`}>
-            <Image
-              src={`${basePath}/images/species/${species.id}-trading-card.png`}
-              alt={species.name}
-              width={120}
-              height={120}
-              className="object-contain drop-shadow-md"
-            />
+            <span className="text-6xl drop-shadow-md">{(species as any).emoji || "🐝"}</span>
             {/* Pack indicator */}
             <div className="absolute bottom-1 right-2 text-[9px] font-bold text-gray-400">
               Pack {species.pack}

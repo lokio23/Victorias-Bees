@@ -10,13 +10,19 @@
     "diet": "Nectar and pollen from diverse flowers",
     "social": true,
     "colonySize": "40,000-80,000",
-    "stats": { "pollinationPower": 9, "speed": 8, "range": 7, "socialLevel": 9 },
+    "stats": {
+      "pollinationPower": 9,
+      "speed": 8,
+      "range": 7,
+      "socialLevel": 9
+    },
     "funFact": "Italian bees are so gentle that many beekeepers work them without gloves!",
     "culturalNote": "Brought to North America in the 1850s, Italian bees quickly became the favorite of American beekeepers due to their calm nature.",
     "superpower": "Prolific Egg Layer — queens can lay 2,000+ eggs per day!",
     "region": "Italy (now worldwide)",
     "size": "12-15mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "🇮🇹🐝"
   },
   {
     "id": "carniolan-bee",
@@ -29,13 +35,19 @@
     "diet": "Nectar and pollen, conservative winter consumers",
     "social": true,
     "colonySize": "30,000-60,000",
-    "stats": { "pollinationPower": 8, "speed": 7, "range": 8, "socialLevel": 8 },
+    "stats": {
+      "pollinationPower": 8,
+      "speed": 7,
+      "range": 8,
+      "socialLevel": 8
+    },
     "funFact": "Carniolan bees form tiny winter clusters to save food — they're the ultimate conservationists!",
     "culturalNote": "Slovenia considers the Carniolan bee a national treasure and has strict laws protecting its genetic purity.",
     "superpower": "Winter Warrior — survives harsh alpine winters with minimal food stores!",
     "region": "Slovenia, Austria, Balkans",
     "size": "12-14mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "🏔️🐝"
   },
   {
     "id": "russian-bee",
@@ -48,13 +60,19 @@
     "diet": "Nectar and pollen",
     "social": true,
     "colonySize": "30,000-50,000",
-    "stats": { "pollinationPower": 7, "speed": 7, "range": 8, "socialLevel": 7 },
+    "stats": {
+      "pollinationPower": 7,
+      "speed": 7,
+      "range": 8,
+      "socialLevel": 7
+    },
     "funFact": "Russian bees constantly build queen cells even when happy — this confuses new beekeepers!",
     "culturalNote": "USDA imported Russian bees to the US in 1997 specifically to combat the Varroa mite crisis.",
     "superpower": "Mite Fighter — natural Varroa resistance through 150 years of co-evolution!",
     "region": "Primorsky Krai, Russia",
     "size": "12-14mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "🇷🇺🐝"
   },
   {
     "id": "buckfast-bee",
@@ -67,13 +85,19 @@
     "diet": "Nectar and pollen from diverse sources",
     "social": true,
     "colonySize": "40,000-70,000",
-    "stats": { "pollinationPower": 9, "speed": 8, "range": 9, "socialLevel": 9 },
+    "stats": {
+      "pollinationPower": 9,
+      "speed": 8,
+      "range": 9,
+      "socialLevel": 9
+    },
     "funFact": "Brother Adam traveled over 100,000 miles across 5 continents collecting bee genetics!",
     "culturalNote": "Brother Adam was a Benedictine monk who spent his entire 98-year life perfecting this hybrid.",
     "superpower": "Designer Bee — combines the best traits of dozens of subspecies!",
     "region": "England (now worldwide)",
     "size": "12-15mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "⛪🐝"
   },
   {
     "id": "german-dark-bee",
@@ -86,13 +110,19 @@
     "diet": "Nectar and pollen",
     "social": true,
     "colonySize": "30,000-50,000",
-    "stats": { "pollinationPower": 7, "speed": 6, "range": 7, "socialLevel": 6 },
+    "stats": {
+      "pollinationPower": 7,
+      "speed": 6,
+      "range": 7,
+      "socialLevel": 6
+    },
     "funFact": "Brought to Jamestown, Virginia in 1622 — Native Americans called them 'white man's flies'!",
     "culturalNote": "Nearly extinct in pure form. Conservation programs in Scandinavia are preserving this historic subspecies.",
     "superpower": "The Original — 10,000+ years of adaptation to cold Northern European climates!",
     "region": "Northern Europe",
     "size": "12-14mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "🖤🐝"
   },
   {
     "id": "africanized-bee",
@@ -105,13 +135,19 @@
     "diet": "Nectar and pollen (excellent foragers)",
     "social": true,
     "colonySize": "30,000-60,000",
-    "stats": { "pollinationPower": 10, "speed": 9, "range": 6, "socialLevel": 10 },
+    "stats": {
+      "pollinationPower": 10,
+      "speed": 9,
+      "range": 6,
+      "socialLevel": 10
+    },
     "funFact": "They swarm up to 16 times per year and can chase a threat for over a quarter mile!",
     "culturalNote": "Despite their reputation, Africanized bees are the primary managed pollinators in Brazil.",
     "superpower": "Ferocious Defenders — will deploy the entire colony to protect the hive!",
     "region": "Americas (spreading northward)",
     "size": "12-13mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "⚡🐝"
   },
   {
     "id": "caucasian-bee",
@@ -124,13 +160,19 @@
     "diet": "Nectar from deep-tubed flowers",
     "social": true,
     "colonySize": "30,000-50,000",
-    "stats": { "pollinationPower": 8, "speed": 6, "range": 9, "socialLevel": 7 },
+    "stats": {
+      "pollinationPower": 8,
+      "speed": 6,
+      "range": 9,
+      "socialLevel": 7
+    },
     "funFact": "Caucasian bees use more propolis than any other subspecies — they cement their hive shut!",
     "culturalNote": "Georgian beekeeping dates back over 5,000 years. The Caucasian bee is a national symbol.",
     "superpower": "Long Tongue — can reach nectar that other bees literally can't!",
     "region": "Georgia, Caucasus Mountains",
     "size": "12-14mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "🏔️🐝"
   },
   {
     "id": "cordovan-bee",
@@ -143,13 +185,19 @@
     "diet": "Nectar and pollen",
     "social": true,
     "colonySize": "40,000-70,000",
-    "stats": { "pollinationPower": 8, "speed": 8, "range": 7, "socialLevel": 9 },
+    "stats": {
+      "pollinationPower": 8,
+      "speed": 8,
+      "range": 7,
+      "socialLevel": 9
+    },
     "funFact": "So distinctively colored that it's super easy to spot the queen — she's the big bright gold one!",
     "culturalNote": "A favorite of queen breeders and backyard beekeepers for their beauty and gentle nature.",
     "superpower": "Golden Beauty — the most visually striking honeybee variant in the world!",
     "region": "USA (specialty breeding, worldwide)",
     "size": "12-15mm worker",
-    "pack": 1
+    "pack": 1,
+    "emoji": "✨🐝"
   },
   {
     "id": "queen-bee",
@@ -162,13 +210,19 @@
     "diet": "Royal jelly exclusively (her entire life)",
     "social": true,
     "colonySize": "1 per colony",
-    "stats": { "pollinationPower": 3, "speed": 5, "range": 3, "socialLevel": 10 },
+    "stats": {
+      "pollinationPower": 3,
+      "speed": 5,
+      "range": 3,
+      "socialLevel": 10
+    },
     "funFact": "She mates with 15-20 drones mid-air and stores all the sperm she'll ever need for her entire life!",
     "culturalNote": "For centuries people called her the 'King Bee' — they didn't realize she was female until the 1600s!",
     "superpower": "Royal Mother — lays 2,000 eggs/day and controls the colony through pheromones!",
     "region": "Inside every managed hive",
     "size": "18-22mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "👑"
   },
   {
     "id": "nurse-bee",
@@ -181,13 +235,19 @@
     "diet": "Honey and pollen (produces royal jelly for larvae)",
     "social": true,
     "colonySize": "~30% of colony",
-    "stats": { "pollinationPower": 2, "speed": 3, "range": 1, "socialLevel": 9 },
+    "stats": {
+      "pollinationPower": 2,
+      "speed": 3,
+      "range": 1,
+      "socialLevel": 9
+    },
     "funFact": "Nurse bees check on each larva up to 1,300 times per day — the most attentive babysitters in nature!",
     "culturalNote": "The discovery that worker bees change jobs as they age was made by Gustav Roesch in 1927.",
     "superpower": "Royal Jelly Factory — special head glands produce the superfood that feeds all larvae!",
     "region": "Inside the hive brood nest",
     "size": "12-15mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "👶🐝"
   },
   {
     "id": "forager-bee",
@@ -200,13 +260,19 @@
     "diet": "Nectar (carries it in honey stomach)",
     "social": true,
     "colonySize": "~30% of colony",
-    "stats": { "pollinationPower": 10, "speed": 9, "range": 10, "socialLevel": 8 },
+    "stats": {
+      "pollinationPower": 10,
+      "speed": 9,
+      "range": 10,
+      "socialLevel": 8
+    },
     "funFact": "Visits 50-100 flowers per trip, 10-12 trips per day — that's 1,200 flowers daily by one bee!",
     "culturalNote": "Forager bees measure distance by tracking how fast the landscape moves past their eyes during flight.",
     "superpower": "Navigator — uses the sun, polarized light, and magnetic fields to find flowers miles away!",
     "region": "Up to 3 miles radius from hive",
     "size": "12-15mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "🌻🐝"
   },
   {
     "id": "guard-bee",
@@ -219,13 +285,19 @@
     "diet": "Honey (needs energy for combat readiness)",
     "social": true,
     "colonySize": "~5% of colony",
-    "stats": { "pollinationPower": 1, "speed": 7, "range": 1, "socialLevel": 10 },
+    "stats": {
+      "pollinationPower": 1,
+      "speed": 7,
+      "range": 1,
+      "socialLevel": 10
+    },
     "funFact": "Guard bees can smell the difference between a sister and a stranger — each colony has a unique chemical 'passport'!",
     "culturalNote": "Guard bees release alarm pheromone to recruit reinforcements — this is why beekeepers smoke the entrance first.",
     "superpower": "Colony Bouncer — checks every bee's chemical ID before allowing entry!",
     "region": "Hive entrance",
     "size": "12-15mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "🛡️🐝"
   },
   {
     "id": "scout-bee",
@@ -238,13 +310,19 @@
     "diet": "Nectar (fuels long exploration flights)",
     "social": true,
     "colonySize": "~5% of foragers",
-    "stats": { "pollinationPower": 6, "speed": 10, "range": 10, "socialLevel": 7 },
+    "stats": {
+      "pollinationPower": 6,
+      "speed": 10,
+      "range": 10,
+      "socialLevel": 7
+    },
     "funFact": "Scout bees have different brain chemistry than other foragers — they're literally wired for adventure!",
     "culturalNote": "When a colony swarms, scouts evaluate new homes and the colony 'votes' by joining dances — bee democracy!",
     "superpower": "Thrill-Seeker — genetically wired for exploration and risk-taking!",
     "region": "Up to 5+ miles from hive",
     "size": "12-15mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "🔍🐝"
   },
   {
     "id": "drone-bee",
@@ -257,13 +335,19 @@
     "diet": "Fed by worker bees",
     "social": true,
     "colonySize": "500-2,000 per colony (spring/summer)",
-    "stats": { "pollinationPower": 1, "speed": 8, "range": 5, "socialLevel": 4 },
+    "stats": {
+      "pollinationPower": 1,
+      "speed": 8,
+      "range": 5,
+      "socialLevel": 4
+    },
     "funFact": "Drones that successfully mate die instantly — mating is literally their final act!",
     "culturalNote": "In fall, workers drag drones out and refuse to let them back in — 'drone eviction' saves food for winter.",
     "superpower": "Sky King — enormous eyes spot a queen from 30+ feet during high-speed mating flights!",
     "region": "Inside the hive and drone congregation areas",
     "size": "15-17mm",
-    "pack": 2
+    "pack": 2,
+    "emoji": "♂️🐝"
   },
   {
     "id": "honey",
@@ -276,13 +360,19 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "60-100 lbs produced per colony/year",
-    "stats": { "pollinationPower": 5, "speed": 3, "range": 5, "socialLevel": 10 },
+    "stats": {
+      "pollinationPower": 5,
+      "speed": 3,
+      "range": 5,
+      "socialLevel": 10
+    },
     "funFact": "3,000-year-old honey in Egyptian tombs was still perfectly edible!",
     "culturalNote": "Honey was used as currency in ancient Germany, as medicine in Egypt, and as offerings to gods worldwide.",
     "superpower": "Eternal Food — naturally antibacterial, it's the only food that never spoils!",
     "region": "Produced worldwide",
     "size": "N/A",
-    "pack": 3
+    "pack": 3,
+    "emoji": "🍯"
   },
   {
     "id": "beeswax",
@@ -295,13 +385,19 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "~2-5 lbs produced per colony/year",
-    "stats": { "pollinationPower": 3, "speed": 2, "range": 3, "socialLevel": 8 },
+    "stats": {
+      "pollinationPower": 3,
+      "speed": 2,
+      "range": 3,
+      "socialLevel": 8
+    },
     "funFact": "It takes 8 pounds of honey to produce 1 pound of beeswax — that's why beekeepers reuse comb!",
     "culturalNote": "Beeswax candles were reserved for churches and royalty in medieval Europe.",
     "superpower": "Perfect Architecture — hexagonal cells use the least wax per unit of storage!",
     "region": "Produced worldwide",
     "size": "N/A",
-    "pack": 3
+    "pack": 3,
+    "emoji": "🕯️"
   },
   {
     "id": "propolis",
@@ -314,13 +410,19 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "~0.5-1 lb collected per colony/year",
-    "stats": { "pollinationPower": 2, "speed": 1, "range": 4, "socialLevel": 7 },
+    "stats": {
+      "pollinationPower": 2,
+      "speed": 1,
+      "range": 4,
+      "socialLevel": 7
+    },
     "funFact": "If a mouse enters and dies, bees mummify it in propolis to prevent disease!",
     "culturalNote": "Hippocrates used propolis to heal wounds 2,400 years ago. Modern research confirms its antimicrobial properties.",
     "superpower": "Antimicrobial Shield — sterilizes the hive and fights bacteria, viruses, and fungi!",
     "region": "Collected from local trees worldwide",
     "size": "N/A",
-    "pack": 3
+    "pack": 3,
+    "emoji": "🧪"
   },
   {
     "id": "royal-jelly",
@@ -333,13 +435,19 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "~0.5 kg harvestable per colony/year",
-    "stats": { "pollinationPower": 1, "speed": 1, "range": 2, "socialLevel": 10 },
+    "stats": {
+      "pollinationPower": 1,
+      "speed": 1,
+      "range": 2,
+      "socialLevel": 10
+    },
     "funFact": "Royal jelly rewires bee DNA through epigenetics — the same egg becomes a 6-week worker or a 5-year queen based solely on diet!",
     "culturalNote": "One of the most expensive bee products — harvesting yields only tiny amounts per colony.",
     "superpower": "Queen Maker — the epigenetic superfood that transforms a regular egg into royalty!",
     "region": "Produced inside every hive",
     "size": "N/A",
-    "pack": 3
+    "pack": 3,
+    "emoji": "👑✨"
   },
   {
     "id": "bee-pollen",
@@ -352,13 +460,19 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "~40-60 lbs collected per colony/year",
-    "stats": { "pollinationPower": 8, "speed": 4, "range": 6, "socialLevel": 8 },
+    "stats": {
+      "pollinationPower": 8,
+      "speed": 4,
+      "range": 6,
+      "socialLevel": 8
+    },
     "funFact": "Bee pollen comes in every color of the rainbow — purple from phacelia, bright orange from dandelion!",
     "culturalNote": "Some beekeepers install 'pollen traps' that gently scrape pellets off returning foragers' legs.",
     "superpower": "Rainbow Protein — each pellet contains up to 200,000 individual pollen grains!",
     "region": "Collected from local flowers worldwide",
     "size": "2-4mm pellets",
-    "pack": 3
+    "pack": 3,
+    "emoji": "🌈"
   },
   {
     "id": "bee-venom",
@@ -371,12 +485,18 @@
     "diet": "N/A",
     "social": true,
     "colonySize": "~0.1mg per sting",
-    "stats": { "pollinationPower": 1, "speed": 2, "range": 1, "socialLevel": 9 },
+    "stats": {
+      "pollinationPower": 1,
+      "speed": 2,
+      "range": 1,
+      "socialLevel": 9
+    },
     "funFact": "The main compound (melittin) is being researched as a treatment for HIV, arthritis, and even some cancers!",
     "culturalNote": "Apitherapy — using bee stings as medicine — has been practiced for thousands of years.",
     "superpower": "Medical Marvel — compounds being studied to fight HIV, cancer, and autoimmune diseases!",
     "region": "Every honeybee colony",
     "size": "N/A",
-    "pack": 3
+    "pack": 3,
+    "emoji": "💉"
   }
 ]
