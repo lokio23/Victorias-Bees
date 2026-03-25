@@ -1,9 +1,27 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { allSpecies, rarityColors, type BeeSpecies } from "@/lib/data/species";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+function SpeciesImage({ species, size = 100, className = "" }: { species: BeeSpecies; size?: number; className?: string }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) {
+    return <span className={`drop-shadow-md ${size >= 120 ? "text-7xl" : "text-6xl"}`}>{(species as any).emoji || "🐝"}</span>;
+  }
+  return (
+    <img
+      src={`${basePath}/images/species/${species.id}-trading-card.png`}
+      alt={species.name}
+      width={size}
+      height={size}
+      className={`object-contain drop-shadow-md ${className}`}
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 type FilterType = "all" | "breed" | "caste" | "product";
 type RarityFilter = "all" | "common" | "rare" | "legendary";
@@ -87,18 +105,7 @@ function SpeciesCard({ species, onClick }: { species: BeeSpecies; onClick: () =>
       </div>
       {/* Species Image */}
       <div className="h-32 bg-gradient-to-b from-white/50 to-transparent flex items-center justify-center">
-        <Image
-          src={`/images/species/${species.id}-trading-card.png`}
-          alt={species.name}
-          width={100}
-          height={100}
-          className="object-contain drop-shadow-md"
-          onError={(e) => {
-            e.currentTarget.style.display = "none";
-            e.currentTarget.nextElementSibling?.classList.remove("hidden");
-          }}
-        />
-        <span className="text-6xl drop-shadow-md hidden">{(species as any).emoji || "🐝"}</span>
+        <SpeciesImage species={species} size={100} />
       </div>
       {/* Info */}
       <div className="p-4">
@@ -148,18 +155,7 @@ function SpeciesDetail({ species, onClose }: { species: BeeSpecies; onClose: () 
             </button>
           </div>
           <div className="text-center mt-4">
-            <Image
-              src={`/images/species/${species.id}-trading-card.png`}
-              alt={species.name}
-              width={140}
-              height={140}
-              className="object-contain drop-shadow-lg mb-3 inline-block"
-              onError={(e) => {
-                e.currentTarget.style.display = "none";
-                e.currentTarget.nextElementSibling?.classList.remove("hidden");
-              }}
-            />
-            <span className="text-7xl drop-shadow-lg mb-3 inline-block hidden">{(species as any).emoji || "🐝"}</span>
+            <SpeciesImage species={species} size={140} className="mb-3 inline-block" />
             <h2 className="font-display text-3xl font-bold">{species.name}</h2>
             <p className="italic text-white/80">{species.scientificName}</p>
           </div>

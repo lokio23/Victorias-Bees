@@ -1,9 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { allSpecies, rarityColors, type BeeSpecies } from "@/lib/data/species";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+function SpeciesImage({ species, size = 120 }: { species: BeeSpecies; size?: number }) {
+  const [failed, setFailed] = useState(false);
+  if (failed) {
+    return <span className="text-6xl drop-shadow-md">{(species as any).emoji || "🐝"}</span>;
+  }
+  return (
+    <img
+      src={`${basePath}/images/species/${species.id}-trading-card.png`}
+      alt={species.name}
+      width={size}
+      height={size}
+      className="object-contain drop-shadow-md"
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 function StatBar({ label, value, maxValue = 10 }: { label: string; value: number; maxValue?: number }) {
   return (
@@ -55,18 +73,7 @@ function TradingCard({ species, flipped, onFlip }: { species: BeeSpecies; flippe
 
           {/* Bee Image Area */}
           <div className={`${colors.bg} h-36 flex items-center justify-center relative`}>
-            <Image
-              src={`/images/species/${species.id}-trading-card.png`}
-              alt={species.name}
-              width={120}
-              height={120}
-              className="object-contain drop-shadow-md"
-              onError={(e) => {
-                e.currentTarget.style.display = "none";
-                e.currentTarget.nextElementSibling?.classList.remove("hidden");
-              }}
-            />
-            <span className="text-6xl drop-shadow-md hidden">{(species as any).emoji || "🐝"}</span>
+            <SpeciesImage species={species} size={120} />
             {/* Pack indicator */}
             <div className="absolute bottom-1 right-2 text-[9px] font-bold text-gray-400">
               Pack {species.pack}
